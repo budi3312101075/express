@@ -1,0 +1,25 @@
+GET http://localhost:5050/notes
+
+###
+GET http://localhost:5050/note/1
+
+###
+DELETE  http://localhost:5050/notes/1
+
+###
+POST http://localhost:5050/notes
+Content-Type: application/json
+
+{
+    "title": "tes",
+    "note": "tes"
+}
+
+###
+PATCH http://localhost:5050/notes/1
+Content-Type: application/json
+
+{
+    "title": "wlwlwwl",
+    "note": "wlwlwwl"
+}
